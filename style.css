@@ -1,0 +1,110 @@
+body{
+    margin: 0%;
+    padding: 0%;
+}
+
+
+
+a{
+margin-top: 10%;
+    height: 80%;
+    width: 50%;
+}
+
+nav{
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgb(224, 209, 213), rgba(252, 214, 214, 0.5)); 
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+nav img{
+    height: 50px;
+    mix-blend-mode: multiply;
+}
+
+#mewarname{
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+
+
+}
+#mewarphoto,
+#adminlogin
+{
+    margin: 0%;
+    height:50px;
+    width: 50px;
+    border-radius: none;
+    
+}
+.container{
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url('images/Mewar University campus.webp'); 
+    background-size: cover;
+    background-position: center;   
+
+}
+#box{
+    height:60%;
+    width:60%;
+    margin:30p;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border: 2px solid black;
+    border-radius: 20px;
+    background-color: rgba(185, 175, 175, 0.3);
+
+    box-shadow: 0 8px 32px rgba(10, 231, 231, 0.1); 
+}
+  
+#student,
+#Faculty,
+#Visitor {
+   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:3%;
+    background-color: azure;
+    border: 2px solid black;
+    border-radius: 20px;
+  
+}
+
+#phtoooo {
+    margin-top: 2%;
+    width: 90%;
+    height: 100%;
+    margin-right: 2em;
+    margin-left: 2em;
+    border: 2px solid black;
+    border-radius: 20px;
+    overflow: hidden; /* Ensure the image doesn't overflow the div */
+}
+
+#phtoooo img {
+    margin-top: 2%;
+    width: 120%;
+    height: 100%;
+    object-fit: contain; 
+    transform: scale(1.2);
+    
+}
+
+#mewarname{
+
+   
+    font-size: 120%;
+    font-family: monospace;
+    color: black;
+
+}
+
+

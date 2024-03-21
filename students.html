@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Student</title>
+    <link rel="stylesheet" href="student.css" />
+</head>
+
+<body>
+    <nav>
+        <div id="mewarphoto">
+            <a href="index.html">
+                <img id="nav" src=" images/Mewar University logo.webp" /></a>
+        </div>
+        <p id="mewarname">Mewar University Rajsthan</p>
+
+        <div id="adminlogin">
+            <a href="admin.html"> <img id="nav" src="images/1046326-200.webp" /></a>
+        </div>
+    </nav>
+
+    <div id="studentdetailslogo">
+        <p>Student Outpass Details...</p>
+    </div>
+
+
+    <div id="container1">
+        
+
+        <div id="out_details">
+
+            <div> <p> OUT</p> </div>
+
+
+            <div class="innerform" id="detailsform-in">
+               <span>MUR</span>: <input type="text" id="MUR" placeholder="Mur Number" />
+                <br>
+                <br>
+                <span> Outpass:</span>  <input type="text" id="Passno" placeholder="Outpass Number" />
+            </div>
+
+            <div class="innerform"  >
+                <span>Hostel</span>
+                <select id="chooseBar">
+                    <option value="option1">Sanga</option>
+                    <option value="option2">Pratap</option>
+                    <option value="option3">Kumba</option>
+                    <option value="option4">international</option>
+                    <option value="option5">Meera</option>
+                    <option value="option6">Panna</option>
+                </select>
+            </div>
+            <div class="innerform" >
+                <span>Room No: </span>
+                <input type="number" id="Room-no" placeholder="Room Number" />
+            </div>
+            <br />
+            <div> <button class="button-17" role="button"  onclick="inputfunction()">Submit</button>
+            </div>
+        </div>
+
+        <div   id="entry_details">
+            <p>IN</p>
+            <div class="innerform" id="entryMUR">
+                <p>Enter Your MUR</p>
+                <input type="text" placeholder="MUR" />
+                <br />
+                <button class="button-17" role="button"  onclick="checkdaetail()">Submit</button>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
