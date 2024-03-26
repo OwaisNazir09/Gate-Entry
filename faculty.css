@@ -1,0 +1,186 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    background-color:rgb(201, 240, 235);
+
+}
+
+
+a{
+margin-top: 10%;
+    height: 80%;
+    width: 50%;
+}
+
+nav{
+    height: 50px;
+    background-image: linear-gradient(to bottom, rgb(224, 209, 213), rgba(252, 214, 214, 0.5)); 
+    display: flex;
+justify-content: space-between;
+align-items: center;
+
+}
+nav img{
+    height: 50px;
+    mix-blend-mode: multiply;
+}
+
+#mewarname{
+    font-size:40px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: black;
+
+
+}
+#container1{
+
+    padding: 0%;
+    display: flex;
+    flex-direction:row;
+    align-items: space-between;
+    justify-content: center;
+
+
+   
+}
+#facultydetailslogo{
+  margin-top: 4%;
+  margin-left: 0%;
+}
+
+#out_details
+{
+    display: flex;
+    align-items: center;
+flex-direction: column;
+margin-right: 1%; 
+border: 2px solid black;   
+align-items:center;
+border-radius: 10%;
+height: 400px;
+width: 300px;
+background-color: white; 
+
+
+
+}
+
+#entry_details{
+    border: 2px solid black;  
+    object-fit:contain;
+    height: 400px;
+width: 300px; 
+border-radius: 10%;
+display: flex;
+align-items: center;
+flex-direction: column;
+background-color: white; }
+.innerform{
+   margin-top: 10;
+   margin-block: 5%;
+}
+input {
+    border: 1px solid #ccc; /* Add a border around the input */
+    border-radius: 5px; /* Round the corners 
+    padding: 10px; /* Add padding inside the input */
+    margin: 5px; /* Add margin around the input */
+
+    background-color: #f0f0f0; /* Set the background color of the input */
+
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); /* Add a shadow effect to the input */
+
+    color:black; /* Set the text color of the input */
+    font-size: 14px; /* Set the font size of the input text */
+}
+
+input::placeholder {
+    color: #0c0c0c; /* Set the color of the placeholder text */
+}
+
+p {
+    font-size: 18px;
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    text-align: center; 
+    text-decoration:underline; 
+    font-weight: bold;
+}
+span{
+    font-size: 18px;
+    font-family: Arial, sans-serif; 
+    color: #333; 
+    text-align: center; 
+    text-decoration: underline; 
+    font-weight: bold;
+}
+
+
+
+.button-17 {
+  align-items: center;
+  appearance: none;
+  background-color: #fff;
+  border-radius: 14px;
+  border-style: none;
+  box-shadow: rgba(0, 0, 0, .2) 0 3px 5px -1px,rgba(0, 0, 0, .14) 0 6px 10px 0,rgba(0, 0, 0, .12) 0 1px 18px 0;
+  box-sizing: border-box;
+  color: #3c4043;
+  cursor: pointer;
+  display: inline-flex;
+  fill: currentcolor;
+  font-family: "Google Sans",Roboto,Arial,sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  height: 28px;
+  justify-content: center;
+  letter-spacing: .25px;
+  line-height: normal;
+  max-width: 100%;
+  overflow: visible;
+  padding: 2px 24px;
+  position: relative;
+  text-align: center;
+  text-transform: none;
+  transition: box-shadow 280ms cubic-bezier(.4, 0, .2, 1),opacity 15ms linear 30ms,transform 270ms cubic-bezier(0, 0, .2, 1) 0ms;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  width: auto;
+  will-change: transform,opacity;
+  z-index: 0;
+}
+
+.button-17:hover {
+  background: #F6F9FE;
+  color: #174ea6;
+}
+
+.button-17:active {
+  box-shadow: 0 4px 4px 0 rgb(60 64 67 / 30%), 0 8px 12px 6px rgb(60 64 67 / 15%);
+  outline: none;
+}
+
+.button-17:focus {
+  outline: none;
+  border: 2px solid #4285f4;
+}
+
+.button-17:not(:disabled) {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):hover {
+  box-shadow: rgba(60, 64, 67, .3) 0 2px 3px 0, rgba(60, 64, 67, .15) 0 6px 10px 4px;
+}
+
+.button-17:not(:disabled):focus {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
+
+.button-17:not(:disabled):active {
+  box-shadow: rgba(60, 64, 67, .3) 0 4px 4px 0, rgba(60, 64, 67, .15) 0 8px 12px 6px;
+}
+
+.button-17:disabled {
+  box-shadow: rgba(60, 64, 67, .3) 0 1px 3px 0, rgba(60, 64, 67, .15) 0 4px 8px 3px;
+}
