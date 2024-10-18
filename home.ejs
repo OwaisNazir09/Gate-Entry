@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css"> <!-- Link your CSS file for styles -->
+    <title>Home</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+            width: 300px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .card-header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px;
+        }
+
+        .profile-img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+            border: 2px solid white;
+        }
+
+        .card-body {
+            padding: 15px;
+        }
+
+        .card-body p {
+            margin: 8px 0;
+        }
+    </style>
+</head>
+
+<body>
+    <form action='/' method='post'>
+        <input type="text" name="enrollmentnumber" placeholder="Enter Enrollment Number" required>
+        <button type="submit">Submit</button>
+    </form>
+
+    <% if (typeof student !== 'undefined') { %>
+        <div class="card">
+            <div class="card-header">
+                <img src="profile.jpg" alt="Profile Image" class="profile-img"> 
+                <h2 class="name"><%= student.name %></h2>
+                <p class="enrollment-number">Enrollment Number: <%= student.enrollment_number %></p>
+            </div>
+            <div class="card-body">
+                <p class="age">Age: <%= student.details.age %></p>
+                <p class="department">Department: <%= student.details.department %></p>
+                <p class="university">University: <%= student.details.university %></p>
+                <p class="email">Email: <%= student.details.email %></p>
+            </div>
+        </div>
+
+        <form action='/entry' method='post'>
+            <input type="hidden" name="enrollmentnumber" value="<%= student.enrollment_number %>">
+            <input type="hidden" name="studentName" value="<%= student.name %>">
+            <input type="hidden" name="studentDetails" value='<%= JSON.stringify(student.details) %>'>        
+            <p>Select Activity:</p>
+            <label>
+                <input type="radio" name="activity" value="shopping" required>
+                Going Shopping
+            </label><br>
+            <label>
+                <input type="radio" name="activity" value="meeting">
+                Attending a Meeting
+            </label><br>
+            <label>
+                <input type="radio" name="activity" value="sports">
+                Participating in Sports
+            </label><br>
+            <label>
+                <input type="radio" name="activity" value="medical">
+                Medical Appointment
+            </label><br>
+            <label>
+                <input type="radio" name="activity" value="other">
+                Other
+            </label><br>
+        
+            <button type="submit" name="action" value="allow">Allow</button>
+            <button type="submit" name="action" value="dont_allow">Don't Allow</button>
+        </form>
+        
+
+    <% } %>
+</body>
+</html>
